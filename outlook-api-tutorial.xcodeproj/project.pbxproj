@@ -16,6 +16,8 @@
 		E9A766871F62B5AB0058EABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A766861F62B5AB0058EABA /* Assets.xcassets */; };
 		E9A7668A1F62B5AB0058EABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A766881F62B5AB0058EABA /* LaunchScreen.storyboard */; };
 		E9A766951F62B5AB0058EABA /* outlook_api_tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A766941F62B5AB0058EABA /* outlook_api_tutorialTests.swift */; };
+		E9CE4E471F6724BC00BBDE10 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE4E461F6724BC00BBDE10 /* MessageCell.swift */; };
+		E9CE4E491F67269500BBDE10 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE4E481F67269500BBDE10 /* Formatter.swift */; };
 		F2E165D7942CC212E7635888 /* Pods_outlook_api_tutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBFCE9ADEC20D52DF1FCED /* Pods_outlook_api_tutorialTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +50,8 @@
 		E9A766901F62B5AB0058EABA /* outlook-api-tutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "outlook-api-tutorialTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A766941F62B5AB0058EABA /* outlook_api_tutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = outlook_api_tutorialTests.swift; sourceTree = "<group>"; };
 		E9A766961F62B5AB0058EABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CE4E461F6724BC00BBDE10 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		E9CE4E481F67269500BBDE10 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				E9A766881F62B5AB0058EABA /* LaunchScreen.storyboard */,
 				E9A7668B1F62B5AB0058EABA /* Info.plist */,
 				E99531251F66E422006D5207 /* OutlookService.swift */,
+				E9CE4E461F6724BC00BBDE10 /* MessageCell.swift */,
+				E9CE4E481F67269500BBDE10 /* Formatter.swift */,
 			);
 			path = "outlook-api-tutorial";
 			sourceTree = "<group>";
@@ -349,7 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CE4E491F67269500BBDE10 /* Formatter.swift in Sources */,
 				E9A766821F62B5AB0058EABA /* SecondViewController.swift in Sources */,
+				E9CE4E471F6724BC00BBDE10 /* MessageCell.swift in Sources */,
 				E99531261F66E422006D5207 /* OutlookService.swift in Sources */,
 				E9A7667E1F62B5AB0058EABA /* AppDelegate.swift in Sources */,
 				E9A766801F62B5AB0058EABA /* MailViewController.swift in Sources */,
