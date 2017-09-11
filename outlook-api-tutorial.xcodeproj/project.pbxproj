@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A5EE19363CE300E150E26A79 /* Pods_outlook_api_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752AA8FA365E9058FCF74574 /* Pods_outlook_api_tutorial.framework */; };
 		E9A7667E1F62B5AB0058EABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7667D1F62B5AB0058EABA /* AppDelegate.swift */; };
-		E9A766801F62B5AB0058EABA /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7667F1F62B5AB0058EABA /* FirstViewController.swift */; };
+		E9A766801F62B5AB0058EABA /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7667F1F62B5AB0058EABA /* MailViewController.swift */; };
 		E9A766821F62B5AB0058EABA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A766811F62B5AB0058EABA /* SecondViewController.swift */; };
 		E9A766851F62B5AB0058EABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A766831F62B5AB0058EABA /* Main.storyboard */; };
 		E9A766871F62B5AB0058EABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9A766861F62B5AB0058EABA /* Assets.xcassets */; };
 		E9A7668A1F62B5AB0058EABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9A766881F62B5AB0058EABA /* LaunchScreen.storyboard */; };
 		E9A766951F62B5AB0058EABA /* outlook_api_tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A766941F62B5AB0058EABA /* outlook_api_tutorialTests.swift */; };
+		F2E165D7942CC212E7635888 /* Pods_outlook_api_tutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBFCE9ADEC20D52DF1FCED /* Pods_outlook_api_tutorialTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,9 +29,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CF4FE50DB5F1C17CCD11DCB /* Pods-outlook-api-tutorialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outlook-api-tutorialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-outlook-api-tutorialTests/Pods-outlook-api-tutorialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60EBFCE9ADEC20D52DF1FCED /* Pods_outlook_api_tutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_outlook_api_tutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC539D197B2A67A18654889 /* Pods-outlook-api-tutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outlook-api-tutorialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-outlook-api-tutorialTests/Pods-outlook-api-tutorialTests.release.xcconfig"; sourceTree = "<group>"; };
+		752AA8FA365E9058FCF74574 /* Pods_outlook_api_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_outlook_api_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75B0979B94D0CA329BE659CB /* Pods-outlook-api-tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outlook-api-tutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-outlook-api-tutorial/Pods-outlook-api-tutorial.release.xcconfig"; sourceTree = "<group>"; };
+		8119181B109AA5379CFEE8B0 /* Pods-outlook-api-tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outlook-api-tutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-outlook-api-tutorial/Pods-outlook-api-tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 		E9A7667A1F62B5AB0058EABA /* outlook-api-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "outlook-api-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A7667D1F62B5AB0058EABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9A7667F1F62B5AB0058EABA /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E9A7667F1F62B5AB0058EABA /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
 		E9A766811F62B5AB0058EABA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E9A766841F62B5AB0058EABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9A766861F62B5AB0058EABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5EE19363CE300E150E26A79 /* Pods_outlook_api_tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E165D7942CC212E7635888 /* Pods_outlook_api_tutorialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +74,8 @@
 				E9A7667C1F62B5AB0058EABA /* outlook-api-tutorial */,
 				E9A766931F62B5AB0058EABA /* outlook-api-tutorialTests */,
 				E9A7667B1F62B5AB0058EABA /* Products */,
+				FEB76E2DC2A18273A98A6925 /* Pods */,
+				F6484F490903253DB4B1CB16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,7 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A7667D1F62B5AB0058EABA /* AppDelegate.swift */,
-				E9A7667F1F62B5AB0058EABA /* FirstViewController.swift */,
+				E9A7667F1F62B5AB0058EABA /* MailViewController.swift */,
 				E9A766811F62B5AB0058EABA /* SecondViewController.swift */,
 				E9A766831F62B5AB0058EABA /* Main.storyboard */,
 				E9A766861F62B5AB0058EABA /* Assets.xcassets */,
@@ -99,6 +111,26 @@
 			path = "outlook-api-tutorialTests";
 			sourceTree = "<group>";
 		};
+		F6484F490903253DB4B1CB16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				752AA8FA365E9058FCF74574 /* Pods_outlook_api_tutorial.framework */,
+				60EBFCE9ADEC20D52DF1FCED /* Pods_outlook_api_tutorialTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB76E2DC2A18273A98A6925 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8119181B109AA5379CFEE8B0 /* Pods-outlook-api-tutorial.debug.xcconfig */,
+				75B0979B94D0CA329BE659CB /* Pods-outlook-api-tutorial.release.xcconfig */,
+				1CF4FE50DB5F1C17CCD11DCB /* Pods-outlook-api-tutorialTests.debug.xcconfig */,
+				6AC539D197B2A67A18654889 /* Pods-outlook-api-tutorialTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A766991F62B5AB0058EABA /* Build configuration list for PBXNativeTarget "outlook-api-tutorial" */;
 			buildPhases = (
+				3573C17FE6022B9502029553 /* [CP] Check Pods Manifest.lock */,
 				E9A766761F62B5AB0058EABA /* Sources */,
 				E9A766771F62B5AB0058EABA /* Frameworks */,
 				E9A766781F62B5AB0058EABA /* Resources */,
+				0131650D236F934B0065FDAC /* [CP] Embed Pods Frameworks */,
+				9C630D1D6BE56E21B23367AB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E9A7669C1F62B5AB0058EABA /* Build configuration list for PBXNativeTarget "outlook-api-tutorialTests" */;
 			buildPhases = (
+				EC6CD4AF4B36F154E18834ED /* [CP] Check Pods Manifest.lock */,
 				E9A7668C1F62B5AB0058EABA /* Sources */,
 				E9A7668D1F62B5AB0058EABA /* Frameworks */,
 				E9A7668E1F62B5AB0058EABA /* Resources */,
+				59E2393A83D5C1276A8D906E /* [CP] Embed Pods Frameworks */,
+				7DDF02DB16AAD76696C80830 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +237,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0131650D236F934B0065FDAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-outlook-api-tutorial/Pods-outlook-api-tutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/p2.OAuth2/p2_OAuth2.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/p2_OAuth2.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-outlook-api-tutorial/Pods-outlook-api-tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3573C17FE6022B9502029553 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-outlook-api-tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59E2393A83D5C1276A8D906E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-outlook-api-tutorialTests/Pods-outlook-api-tutorialTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DDF02DB16AAD76696C80830 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-outlook-api-tutorialTests/Pods-outlook-api-tutorialTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C630D1D6BE56E21B23367AB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-outlook-api-tutorial/Pods-outlook-api-tutorial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6CD4AF4B36F154E18834ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-outlook-api-tutorialTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E9A766761F62B5AB0058EABA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -206,7 +348,7 @@
 			files = (
 				E9A766821F62B5AB0058EABA /* SecondViewController.swift in Sources */,
 				E9A7667E1F62B5AB0058EABA /* AppDelegate.swift in Sources */,
-				E9A766801F62B5AB0058EABA /* FirstViewController.swift in Sources */,
+				E9A766801F62B5AB0058EABA /* MailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +485,7 @@
 		};
 		E9A7669A1F62B5AB0058EABA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8119181B109AA5379CFEE8B0 /* Pods-outlook-api-tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6GGPXF4R3P;
@@ -356,6 +499,7 @@
 		};
 		E9A7669B1F62B5AB0058EABA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75B0979B94D0CA329BE659CB /* Pods-outlook-api-tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6GGPXF4R3P;
@@ -369,6 +513,7 @@
 		};
 		E9A7669D1F62B5AB0058EABA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF4FE50DB5F1C17CCD11DCB /* Pods-outlook-api-tutorialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -384,6 +529,7 @@
 		};
 		E9A7669E1F62B5AB0058EABA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AC539D197B2A67A18654889 /* Pods-outlook-api-tutorialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

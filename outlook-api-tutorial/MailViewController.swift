@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  MailViewController.swift
 //  outlook-api-tutorial
 //
 //  Created by Tomek Buslowski on 08.09.2017.
@@ -8,8 +8,10 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class MailViewController: UIViewController {
 
+    @IBOutlet weak var logInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +21,6 @@ class FirstViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 
