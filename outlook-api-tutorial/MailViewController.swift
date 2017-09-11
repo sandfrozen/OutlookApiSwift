@@ -22,5 +22,8 @@ class MailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func logInButtonTapped(_ sender: Any) {
+        NSLog("Hello World")
+    }
 }
 

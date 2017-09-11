@@ -25,11 +25,17 @@
                                 <rect key="frame" x="315" y="28" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="logInButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Cgc-ed-u5L"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mail" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="logInButton" destination="hea-hO-ADs" id="pl8-7P-UfK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

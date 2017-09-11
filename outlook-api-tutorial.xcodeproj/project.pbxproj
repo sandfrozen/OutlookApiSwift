@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A5EE19363CE300E150E26A79 /* Pods_outlook_api_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752AA8FA365E9058FCF74574 /* Pods_outlook_api_tutorial.framework */; };
+		E99531261F66E422006D5207 /* OutlookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99531251F66E422006D5207 /* OutlookService.swift */; };
 		E9A7667E1F62B5AB0058EABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7667D1F62B5AB0058EABA /* AppDelegate.swift */; };
 		E9A766801F62B5AB0058EABA /* MailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A7667F1F62B5AB0058EABA /* MailViewController.swift */; };
 		E9A766821F62B5AB0058EABA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A766811F62B5AB0058EABA /* SecondViewController.swift */; };
@@ -35,6 +36,7 @@
 		752AA8FA365E9058FCF74574 /* Pods_outlook_api_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_outlook_api_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75B0979B94D0CA329BE659CB /* Pods-outlook-api-tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outlook-api-tutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-outlook-api-tutorial/Pods-outlook-api-tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		8119181B109AA5379CFEE8B0 /* Pods-outlook-api-tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-outlook-api-tutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-outlook-api-tutorial/Pods-outlook-api-tutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		E99531251F66E422006D5207 /* OutlookService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutlookService.swift; sourceTree = "<group>"; };
 		E9A7667A1F62B5AB0058EABA /* outlook-api-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "outlook-api-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A7667D1F62B5AB0058EABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9A7667F1F62B5AB0058EABA /* MailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				E9A766861F62B5AB0058EABA /* Assets.xcassets */,
 				E9A766881F62B5AB0058EABA /* LaunchScreen.storyboard */,
 				E9A7668B1F62B5AB0058EABA /* Info.plist */,
+				E99531251F66E422006D5207 /* OutlookService.swift */,
 			);
 			path = "outlook-api-tutorial";
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9A766821F62B5AB0058EABA /* SecondViewController.swift in Sources */,
+				E99531261F66E422006D5207 /* OutlookService.swift in Sources */,
 				E9A7667E1F62B5AB0058EABA /* AppDelegate.swift in Sources */,
 				E9A766801F62B5AB0058EABA /* MailViewController.swift in Sources */,
 			);
@@ -562,6 +566,7 @@
 				E9A7669B1F62B5AB0058EABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E9A7669C1F62B5AB0058EABA /* Build configuration list for PBXNativeTarget "outlook-api-tutorialTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +575,7 @@
 				E9A7669E1F62B5AB0058EABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
