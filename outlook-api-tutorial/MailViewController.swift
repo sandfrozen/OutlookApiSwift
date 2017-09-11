@@ -26,15 +26,20 @@ class MailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
         setLogInState(loggedIn: service.isLoggedIn)
+        if service.isLoggedIn {
+            loadUserData()
+        }
     }
     
     
     // MARK: - Actions
     @IBAction func logInButtonTapped(_ sender: Any) {
-        if service.isLoggedIn {
+        if (service.isLoggedIn) {
+            // Logout
             service.logout()
             setLogInState(loggedIn: false)
         } else {
+            // Login
             service.login(from: self) {
                 error in
                 if let unwrappedError = error {
@@ -42,16 +47,25 @@ class MailViewController: UIViewController {
                 } else {
                     NSLog("Successfully logged in.")
                     self.setLogInState(loggedIn: true)
+                    self.loadUserData()
                 }
             }
-        }
-    }
+        }    }
     
     func setLogInState(loggedIn: Bool) {
         if loggedIn {
             logInButton.setTitle("Log Out", for: UIControlState.normal)
         } else {
             logInButton.setTitle("Log In", for: UIControlState.normal)
+        }
+    }
+    
+    func loadUserData() {
+        service.getUserEmail() {
+            email in
+            if let unwrappedEmail = email {
+                NSLog("Hello \(unwrappedEmail)")
+            }
         }
     }
 }
