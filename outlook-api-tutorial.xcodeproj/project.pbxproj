@@ -18,6 +18,7 @@
 		E9A766951F62B5AB0058EABA /* outlook_api_tutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A766941F62B5AB0058EABA /* outlook_api_tutorialTests.swift */; };
 		E9CE4E471F6724BC00BBDE10 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE4E461F6724BC00BBDE10 /* MessageCell.swift */; };
 		E9CE4E491F67269500BBDE10 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE4E481F67269500BBDE10 /* Formatter.swift */; };
+		E9CE4E4B1F67287500BBDE10 /* MessagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE4E4A1F67287500BBDE10 /* MessagesDataSource.swift */; };
 		F2E165D7942CC212E7635888 /* Pods_outlook_api_tutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60EBFCE9ADEC20D52DF1FCED /* Pods_outlook_api_tutorialTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		E9A766961F62B5AB0058EABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9CE4E461F6724BC00BBDE10 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		E9CE4E481F67269500BBDE10 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		E9CE4E4A1F67287500BBDE10 /* MessagesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				E99531251F66E422006D5207 /* OutlookService.swift */,
 				E9CE4E461F6724BC00BBDE10 /* MessageCell.swift */,
 				E9CE4E481F67269500BBDE10 /* Formatter.swift */,
+				E9CE4E4A1F67287500BBDE10 /* MessagesDataSource.swift */,
 			);
 			path = "outlook-api-tutorial";
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				E9CE4E491F67269500BBDE10 /* Formatter.swift in Sources */,
 				E9A766821F62B5AB0058EABA /* SecondViewController.swift in Sources */,
 				E9CE4E471F6724BC00BBDE10 /* MessageCell.swift in Sources */,
+				E9CE4E4B1F67287500BBDE10 /* MessagesDataSource.swift in Sources */,
 				E99531261F66E422006D5207 /* OutlookService.swift in Sources */,
 				E9A7667E1F62B5AB0058EABA /* AppDelegate.swift in Sources */,
 				E9A766801F62B5AB0058EABA /* MailViewController.swift in Sources */,

@@ -12,23 +12,28 @@ class MailViewController: UIViewController {
     
     // MARK: - Properties
     let service = OutlookService.shared()
+    var dataSource: MessagesDataSource?
 
     @IBOutlet weak var logInButton: UIButton!
+    @IBOutlet weak var tableView: UITableView!
     
     
     // MARK: - Built-in
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setLogInState(loggedIn: service.isLoggedIn)
+        if service.isLoggedIn {
+            loadUserData()
+        }
+        
+        self.tableView.estimatedRowHeight = 90.0
+        self.tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-        setLogInState(loggedIn: service.isLoggedIn)
-        if service.isLoggedIn {
-            loadUserData()
-        }
     }
     
     
@@ -69,9 +74,9 @@ class MailViewController: UIViewController {
                 self.service.getInboxMessages() {
                     messages in
                     if let unwrappedMessages = messages {
-                        for (message) in unwrappedMessages["value"].arrayValue {
-                            NSLog(message["subject"].stringValue)
-                        }
+                        self.dataSource = MessagesDataSource(messages: unwrappedMessages["value"].arrayValue)
+                        self.tableView.dataSource = self.dataSource
+                        self.tableView.reloadData()
                     }
                 }
             }

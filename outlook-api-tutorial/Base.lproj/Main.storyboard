@@ -33,48 +33,50 @@
                                 <rect key="frame" x="16" y="66" width="343" height="552"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" rowHeight="80" id="jck-Na-zqv" customClass="MessageCell" customModule="outlook_api_tutorial" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" rowHeight="90" id="OzR-VE-DKU" customClass="MessageCell" customModule="outlook_api_tutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jck-Na-zqv" id="Roq-GC-RfB">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="80"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OzR-VE-DKU" id="tR8-vC-GUm">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jcc-BA-fuY">
-                                                    <rect key="frame" x="8" y="8" width="327" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gYE-7h-Y5l">
-                                                    <rect key="frame" x="8" y="32" width="327" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njF-80-Wrv">
-                                                    <rect key="frame" x="8" y="54" width="327" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gw4-4p-xiW">
+                                                    <rect key="frame" x="8" y="8" width="70" height="60.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjt-mQ-Tr2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="70" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIu-Lg-rMU">
+                                                            <rect key="frame" x="0.0" y="20.5" width="70" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-wY-uCK">
+                                                            <rect key="frame" x="0.0" y="40.5" width="70" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="nIu-Lg-rMU" secondAttribute="bottom" constant="20" symbolic="YES" id="8Jx-M8-aMW"/>
+                                                        <constraint firstItem="NBd-wY-uCK" firstAttribute="top" secondItem="Cjt-mQ-Tr2" secondAttribute="bottom" constant="20" id="iy1-4s-eSg"/>
+                                                    </constraints>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="gYE-7h-Y5l" firstAttribute="trailing" secondItem="njF-80-Wrv" secondAttribute="trailing" id="6Bv-3a-SPO"/>
-                                                <constraint firstItem="Jcc-BA-fuY" firstAttribute="leading" secondItem="gYE-7h-Y5l" secondAttribute="leading" id="95d-N4-ZvP"/>
-                                                <constraint firstItem="gYE-7h-Y5l" firstAttribute="top" secondItem="Jcc-BA-fuY" secondAttribute="bottom" id="HDT-Em-l74"/>
-                                                <constraint firstItem="Jcc-BA-fuY" firstAttribute="leading" secondItem="Roq-GC-RfB" secondAttribute="leadingMargin" id="Oiu-dj-NGD"/>
-                                                <constraint firstItem="Jcc-BA-fuY" firstAttribute="trailing" secondItem="Roq-GC-RfB" secondAttribute="trailingMargin" id="Vns-HW-YuH"/>
-                                                <constraint firstItem="Jcc-BA-fuY" firstAttribute="trailing" secondItem="gYE-7h-Y5l" secondAttribute="trailing" id="XCe-uR-rKI"/>
-                                                <constraint firstItem="Jcc-BA-fuY" firstAttribute="top" secondItem="Roq-GC-RfB" secondAttribute="topMargin" id="cAP-fj-1OM"/>
-                                                <constraint firstItem="gYE-7h-Y5l" firstAttribute="leading" secondItem="njF-80-Wrv" secondAttribute="leading" id="mpG-Ci-FpR"/>
-                                                <constraint firstItem="njF-80-Wrv" firstAttribute="top" secondItem="gYE-7h-Y5l" secondAttribute="bottom" constant="1" id="pjB-DN-Ftt"/>
+                                                <constraint firstItem="gw4-4p-xiW" firstAttribute="top" secondItem="tR8-vC-GUm" secondAttribute="topMargin" id="4L7-iw-0d0"/>
+                                                <constraint firstItem="gw4-4p-xiW" firstAttribute="leading" secondItem="tR8-vC-GUm" secondAttribute="leadingMargin" id="ZLP-Ex-o4U"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="fromLabel" destination="Jcc-BA-fuY" id="4Oh-Uk-kHz"/>
-                                            <outlet property="receivedLabel" destination="gYE-7h-Y5l" id="AEX-ho-yMa"/>
-                                            <outlet property="subjectLabel" destination="njF-80-Wrv" id="ky9-Kp-agG"/>
+                                            <outlet property="fromLabel" destination="Cjt-mQ-Tr2" id="dQb-nS-vbS"/>
+                                            <outlet property="receivedLabel" destination="nIu-Lg-rMU" id="Mzc-Ks-0ZT"/>
+                                            <outlet property="subjectLabel" destination="NBd-wY-uCK" id="d4C-0d-HPq"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -93,6 +95,7 @@
                     <tabBarItem key="tabBarItem" title="Mail" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="logInButton" destination="hea-hO-ADs" id="pl8-7P-UfK"/>
+                        <outlet property="tableView" destination="XeS-y7-D6g" id="rcK-7c-Jec"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
