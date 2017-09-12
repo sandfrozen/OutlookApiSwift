@@ -14,6 +14,7 @@ class MailViewController: UIViewController {
     let service = OutlookService.shared()
     var dataSource: MessagesDataSource?
 
+    @IBOutlet weak var mailLabel: UILabel!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var tableView: UITableView!
     
@@ -26,9 +27,6 @@ class MailViewController: UIViewController {
         if service.isLoggedIn {
             loadUserData()
         }
-        
-        self.tableView.estimatedRowHeight = 90.0
-        self.tableView.rowHeight = UITableViewAutomaticDimension
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,6 +38,11 @@ class MailViewController: UIViewController {
     // MARK: - Actions
     @IBAction func logInButtonTapped(_ sender: Any) {
         if (service.isLoggedIn) {
+            // Remove messages
+            dataSource?.clean()
+            self.tableView.dataSource = self.dataSource
+            self.tableView.reloadData()
+            self.mailLabel.text = "🔐"
             // Logout
             service.logout()
             setLogInState(loggedIn: false)
@@ -70,6 +73,7 @@ class MailViewController: UIViewController {
             email in
             if let unwrappedEmail = email {
                 NSLog("Hello \(unwrappedEmail)")
+                self.mailLabel.text = unwrappedEmail
                 
                 self.service.getInboxMessages() {
                     messages in

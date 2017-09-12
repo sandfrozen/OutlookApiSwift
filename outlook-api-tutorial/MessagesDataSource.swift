@@ -11,7 +11,7 @@ import SwiftyJSON
 import UIKit
 
 class MessagesDataSource: NSObject {
-    let messages: [Message]
+    var messages: [Message]
     
     init(messages: [JSON]?) {
         var msgArray = [Message]()
@@ -28,6 +28,10 @@ class MessagesDataSource: NSObject {
         }
         
         self.messages = msgArray
+    }
+    
+    func clean() {
+        self.messages = [Message]()
     }
 }
 

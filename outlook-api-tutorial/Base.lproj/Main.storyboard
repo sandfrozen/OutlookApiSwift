@@ -22,41 +22,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hea-hO-ADs">
-                                <rect key="frame" x="315" y="28" width="42" height="30"/>
-                                <state key="normal" title="Log In"/>
-                                <connections>
-                                    <action selector="logInButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Cgc-ed-u5L"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XeS-y7-D6g">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🔐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8k-Md-U4q">
+                                <rect key="frame" x="16" y="29" width="23" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XeS-y7-D6g">
                                 <rect key="frame" x="16" y="66" width="343" height="552"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" rowHeight="90" id="OzR-VE-DKU" customClass="MessageCell" customModule="outlook_api_tutorial" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" id="OzR-VE-DKU" customClass="MessageCell" customModule="outlook_api_tutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OzR-VE-DKU" id="tR8-vC-GUm">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gw4-4p-xiW">
-                                                    <rect key="frame" x="8" y="8" width="70" height="60.5"/>
+                                                    <rect key="frame" x="8" y="8" width="59" height="64"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjt-mQ-Tr2">
-                                                            <rect key="frame" x="0.0" y="0.0" width="70" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="59" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                            <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nIu-Lg-rMU">
-                                                            <rect key="frame" x="0.0" y="20.5" width="70" height="20"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
+                                                            <rect key="frame" x="0.0" y="24" width="59" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <color key="textColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-wY-uCK">
-                                                            <rect key="frame" x="0.0" y="40.5" width="70" height="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-wY-uCK">
+                                                            <rect key="frame" x="0.0" y="44" width="59" height="20"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -81,20 +80,30 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hea-hO-ADs">
+                                <rect key="frame" x="317" y="24" width="42" height="30"/>
+                                <state key="normal" title="Log In"/>
+                                <connections>
+                                    <action selector="logInButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Cgc-ed-u5L"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="hea-hO-ADs" secondAttribute="trailing" constant="2" id="Ird-YH-9QM"/>
-                            <constraint firstItem="hea-hO-ADs" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="KR5-DJ-1lu"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Y8k-Md-U4q" secondAttribute="leading" id="JGY-6m-9li"/>
                             <constraint firstItem="XeS-y7-D6g" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" id="Oxb-8h-pPx"/>
+                            <constraint firstItem="Y8k-Md-U4q" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="9" id="Tdr-Rn-sm6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hea-hO-ADs" secondAttribute="trailing" id="YW7-c7-SQF"/>
                             <constraint firstItem="XeS-y7-D6g" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="Ze1-QN-rvr"/>
-                            <constraint firstItem="XeS-y7-D6g" firstAttribute="top" secondItem="hea-hO-ADs" secondAttribute="bottom" constant="8" symbolic="YES" id="cwf-Qr-W0c"/>
                             <constraint firstItem="XeS-y7-D6g" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="hkQ-nW-tsC"/>
+                            <constraint firstItem="hea-hO-ADs" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="4" id="nfm-oY-sLV"/>
+                            <constraint firstItem="XeS-y7-D6g" firstAttribute="top" secondItem="hea-hO-ADs" secondAttribute="bottom" constant="12" id="pXO-cO-QIo"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mail" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="logInButton" destination="hea-hO-ADs" id="pl8-7P-UfK"/>
+                        <outlet property="mailLabel" destination="Y8k-Md-U4q" id="cxu-Z3-UfB"/>
                         <outlet property="tableView" destination="XeS-y7-D6g" id="rcK-7c-Jec"/>
                     </connections>
                 </viewController>
